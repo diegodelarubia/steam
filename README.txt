@@ -1,129 +1,126 @@
-Análisis del Mercado de Steam — ¿Cómo Diseñar un Videojuego Exitoso?
+🎮 Análisis del Mercado de Steam — ¿Cómo Diseñar un Videojuego Exitoso?
+📌 Descripción del Proyecto
 
-Objetivo del Proyecto
+Este proyecto analiza datos históricos de videojuegos publicados en Steam con el objetivo de identificar qué características están más asociadas al éxito de un juego.
 
-Este proyecto analiza datos históricos de Steam para identificar qué características (género y precio) están asociadas a:
+El análisis se centra en tres indicadores principales:
 
-Mayor número de propietarios (owners) → éxito comercial
+Número de propietarios (owners) → indicador de éxito comercial
 
-Mayor número de usuarios concurrentes (concurrent_users) → engagement y retención
+Usuarios concurrentes (concurrent_users) → indicador de engagement y retención
 
-Mayor tasa de aprobación (approval_rate) → satisfacción del jugador
+Tasa de aprobación (approval_rate) → indicador de satisfacción del jugador
 
-El objetivo final es proporcionar una recomendación estratégica basada en datos para el desarrollo de un nuevo videojuego con altas probabilidades de éxito.
+El propósito final es extraer insights basados en datos que ayuden a definir una estrategia para desarrollar un videojuego con mayores probabilidades de éxito en el mercado.
 
-Limpieza y Preparación de Datos
+🧹 Limpieza y Preparación de los Datos
 
-Antes de realizar el análisis, se llevaron a cabo los siguientes pasos:
+Antes de comenzar el análisis exploratorio, se realizaron varios pasos de preparación de los datos:
 
-Conversión de rangos de propietarios en una métrica numérica (owners_mean).
+Conversión de los rangos de propietarios en una variable numérica (owners_mean)
 
-Eliminación de valores nulos y registros duplicados.
+Eliminación de registros duplicados y valores nulos
 
-Aplicación de un umbral mínimo de reseñas para evitar sesgos en la métrica de satisfacción.
+Aplicación de un mínimo de reseñas para evitar sesgos en la métrica de satisfacción
 
-Creación de rangos de precio para facilitar el análisis comparativo.
+Creación de rangos de precios para facilitar el análisis comparativo
 
-La distribución de propietarios mostró una estructura de mercado altamente desigual: un pequeño número de juegos concentra la mayor parte de las ventas.
-------------------------------------------------------------------------------------------------------------------
+El análisis inicial mostró que el mercado presenta una distribución muy desigual, donde un número reducido de juegos concentra la mayor parte de las ventas.
 
-1.Análisis Individual de Variables
-🔹 Owners (Éxito Comercial)
+📊 Análisis Exploratorio
+🔹 Éxito Comercial (Owners)
 
-El mercado presenta una alta concentración.
+El mercado de Steam presenta una alta concentración de ventas.
 
-Un pequeño porcentaje de juegos acumula la mayoría de propietarios.
+Un pequeño porcentaje de juegos acumula la mayor parte de los propietarios.
 
 La distribución está fuertemente sesgada hacia la derecha.
 
-Tener muchas ventas no garantiza alta retención.
+Un alto volumen de ventas no siempre se traduce en mayor retención de jugadores.
 
-🔹 Concurrent Users (Engagement)
+🔹 Engagement de Jugadores (Concurrent Users)
 
-Algunos juegos tienen muchas ventas iniciales pero baja actividad posterior.
+Algunos juegos consiguen muchas ventas iniciales pero mantienen bajos niveles de actividad posterior.
 
-Los juegos multijugador o cooperativos tienden a mantener mayores niveles de usuarios concurrentes.
+Los juegos multijugador o cooperativos suelen mantener más usuarios activos al mismo tiempo.
 
-El engagement es un factor clave más allá del volumen de ventas.
+El engagement resulta ser un factor clave más allá del número de ventas.
 
-🔹 Approval Rate (Satisfacción)
+🔹 Satisfacción de los Jugadores (Approval Rate)
 
-Se aplicó un filtro mínimo de reseñas para reducir distorsiones estadísticas.
+Para mejorar la fiabilidad del análisis se estableció un umbral mínimo de reseñas.
 
-Géneros como Accounting, Casual e Indie presentan mayores niveles de satisfacción.
+Observaciones principales:
 
-La satisfacción no siempre está directamente correlacionada con el volumen de ventas.
-------------------------------------------------------------------------------------------------------------------
+Géneros como Accounting, Casual e Indie presentan mayores niveles de aprobación.
 
-Análisis por Género
+La satisfacción del jugador no siempre está directamente relacionada con el volumen de ventas.
 
-Se analizaron los géneros combinando el promedio de:
+🎮 Análisis por Género
 
-Propietarios
+Se analizaron los géneros considerando el promedio de:
+
+Número de propietarios
 
 Usuarios concurrentes
 
 Tasa de aprobación
 
-Resultados destacados:
+Resultados principales
 
-Photo Editing y Massively Multiplayer presentan mayor éxito comercial y mayor engagement.
+Photo Editing y Massively Multiplayer destacan en términos de éxito comercial y engagement.
 
-Accounting, Casual e Indie destacan en satisfacción.
+Accounting, Casual e Indie sobresalen en satisfacción de los jugadores.
 
-Los géneros con componente online muestran mayor retención de jugadores.
-------------------------------------------------------------------------------------------------------------------
+Los juegos con componentes online tienden a mostrar mayores niveles de retención.
 
-Análisis por Precio
+💰 Análisis por Precio
 
-Se agruparon los juegos en rangos de precio para evaluar su impacto en el rendimiento.
+Para estudiar el impacto del precio en el rendimiento del juego, se agruparon los títulos en distintos rangos de precio.
 
-Conclusiones principales:
+Conclusiones principales
 
-El rango de 51–100 € concentra:
+El rango de 51 € a 100 € presenta:
 
-Mayor número promedio de propietarios.
+Mayor número promedio de propietarios
 
-Mayor número promedio de usuarios concurrentes.
+Mayor número promedio de usuarios concurrentes
 
-Los precios extremadamente altos son casos aislados y no representan un patrón de éxito generalizable.
+Los precios extremadamente altos aparecen como casos aislados y no representan una estrategia generalizable.
 
-El posicionamiento en precio influye significativamente en el desempeño comercial.
+El posicionamiento del precio influye de forma significativa en el desempeño comercial.
 
-------------------------------------------------------------------------------------------------------------------
- Recomendación Estratégica
+🚀 Recomendación Estratégica
 
-Con base en el análisis histórico del mercado de Steam:
+A partir del análisis de los datos históricos del mercado de Steam, se puede plantear la siguiente estrategia:
 
-- Género Recomendado
+🎮 Género Recomendado
 
-	- Massively Multiplayer o géneros con fuerte componente online y enfoque en retención.
+Massively Multiplayer o juegos con fuerte componente online orientados a la retención de jugadores.
 
-- Rango de Precio Recomendado
+💰 Rango de Precio Recomendado
 
-	- Entre 51 € y 100 €.
+Entre 51 € y 100 €
 
-------------------------------------------------------------------------------------------------------------------
+Esta combinación parece maximizar éxito comercial, engagement y sostenibilidad a largo plazo.
 
-Metodología
+📐 Metodología
 
-El análisis incluyó:
+El proyecto incluye diferentes técnicas de análisis:
 
 Estadística descriptiva
 
-Análisis de distribuciones (incluyendo transformación logarítmica)
+Análisis de distribuciones (incluyendo transformaciones logarítmicas)
 
-Rankings y comparaciones
+Rankings y comparaciones entre variables
 
-Agrupación por género y precio
+Agrupación de datos por género y rango de precio
 
-Visualizaciones (histogramas, gráficos de barras, heatmaps)
+Visualización de datos mediante histogramas, gráficos de barras y heatmaps
 
 Comparación cruzada entre ventas, engagement y satisfacción
 
-------------------------------------------------------------------------------------------------------------------
-
-Herramientas Utilizadas
+🛠 Herramientas Utilizadas
 
 Python
 
